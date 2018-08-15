@@ -1,0 +1,4 @@
+<h2>Restaurant Index</h2>
+<ul><% @restaurants.each do |restaurant| %>
+  <li><%= link_to restaurant.name, restaurant_path(restaurant[:id]) %> - <%= restaurant.address %></li>
+<% end %></ul>
